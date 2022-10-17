@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="..\src\fonts\stylesheet.css">
+        <title>Pizzeria de Rosso</title>
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <h1 class="Pizzeria De Rosso">Pizzeria De Rosso</h1>
+                <h2 class="welcome"><Menu></Menu></h2>
+            </div>
+            <img class="logo" src="..\src\images\pizza_slice_yellow.png">
+        </header>
+       <div class="pizza-select">
+        <label for="pizza-select" class="which_pizza">Wybór Pizzy</label>
+        <select name="pizzas" id="pizza-select">
+            <option class='pizza-select__option' value="none">--Propozycje--</option>
+            <option class='pizza-select__option' value="Margeritta">Margeritta</option>
+            <option class='pizza-select__option' value="Capricosa">Capricosa</option>
+            <option class='pizza-select__option' value="Caprese">Caprese</option>
+            <option class='pizza-select__option' value="Bianca">Bianca</option>
+            <option class='pizza-select__option' value="Diavola">Diavola </option>
+            <option class='pizza-select__option' value="Egzotica">Egzotica</option>
+            <option class='pizza-select__option' value="Marinara">Marinara</option>
+            <option class='pizza-select__option' value="Neapolitana">Neapolitana</option>
+            
+        </select>
+        </div> 
+        <fieldset class="sauce-wrapper">
+            <legend class="legend">Sosy</legend>
+            <div class="sauce-wrapper__div">
+                <input type="checkbox" id="mild" name="sauce" value="mild" >
+                <label for="mild" class="sauce-wrapper__label">Łagodny</label>
+                <input type="checkbox" id="hot" name="sauce" value="hot">
+                <label for="hot"class="sauce-wrapper__label">Średno-Łagodny</label>
+                <input type="checkbox" id="very-hot" name="sauce" value="very-hot">
+                <label for="very-hot" class="sauce-wrapper__label">Ostry</label>
+                <input type="checkbox" id="killer" name="sauce" value="killer">
+                <label for="killer" class="sauce-wrapper__label">Bardzo ostry</label>
+            </div>
+        </fieldset>
+        </div>
+        <fieldset class="drinks-wrapper">
+                <legend class="legend">Drinki</legend>
+        <div class="drinks-wrapper__div">
+            <input type="checkbox" class="checkbox" id="coffee" name="drink" value="coffee">
+            <label for="coffee" class="drinks__label">Kawa</label>
+            <input type="checkbox" class="checkbox" id="vine" name="drink" value="beer">
+            <label for="vine" class="drinks__label">Wino</label>
+            <input type="checkbox" class="checkbox" id="bear" name="drink" value="water">
+            <label for="water" class="drinks__label">Piwo</label>
+            </div>
+        </fieldset>
+        <fieldset class="personal-info">
+            <legend class="legend">Dane </legend>
+            <label for="name" class="personal-info__label">Imię i Nazwisko</label>
+            <input type="text" class="personal-info__input" id="name" name="" value=""placeholder="Imię i Nazwisko"> >
+            <label for="email" class="personal-info__label">E-mail</label>
+            <input type="text" class="personal-info__input" id="email" name=""placeholder="email">
+            <label for="address" class="personal-info__label">Adress dostawy</label>
+            <input type="text" class="personal-info__input" id="address" name=""placeholder="adress zamieszkania ">
+            <label for="phone" class="personal-info__label" >Telefon</label>
+            <input type="" id="phone" class="personal-info__input" name="" value="" placeholder="+48xxxxxxxxx">
+        </fieldset>
+    
+        <fieldset class="text-area-container">
+            <legend class="legend">Wiadomość  </legend>
+            <label for="chef-message"></label>
+            <textarea class="text-area" id ="chef-message" placeholder="Wiadomość dla kucharza" rows="2" cols="50"></textarea>
+        </fieldset>
+        <div class="button-div">
+            <button class="submit-btn" id="submit-btn">Zamawiam</button> 
+        </div>
+        <script src="mian.js"></script>
+    </body>
+</html>
